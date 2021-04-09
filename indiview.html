@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+<body>
+<h3>Subject Name: {{ subname }}</h3>
+<table border="1">
+    <th style="background-color:#FAD7A0">Roll Number</th>
+    <th style="background-color:#FAD7A0">Grade</th>
+    <tr>
+        {% for k in indili %}
+      <td>{{ k['rollnum'] }}</td>
+      <td>{{ k['grade'] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
